@@ -1,1 +1,265 @@
-tudo certo
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Caio Niehues</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+    :root {
+      --primary: #006AA3;
+      --secondary: #a3cbd2;
+      --mono: 'Fira Mono', Monaco, monospace;
+    }
+    body {
+      background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    }
+
+    header#summary, header#summary a, section.secondary {
+      color: rgba(255, 255, 255, .95);
+      font-family: var(--mono);
+    }
+
+    @media(min-width: 1024px) {
+      header#summary {
+        margin-top: 25px;
+      }
+    }
+
+    header#summary h1 {
+      margin-top: 20px;
+      margin-bottom: 0.5rem;
+    }
+
+    header#summary ul {
+      margin-top: 1.5rem;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    header#summary ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    img.avatar {
+      border-radius: 5px;
+      box-shadow: 0 0 27px rgba(96, 96, 96, .34);
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      position: relative;
+      top: 30px;
+    }
+
+    main#main {
+      background: #FFFFFF;
+      color: rgba(0, 0, 0, .87);
+    }
+
+    article {
+      padding: 60px 0;
+    }
+
+    section.workplace {
+      padding-left: 1.5rem;
+      padding-bottom: 3rem;
+      border-left: 2px solid var(--primary);
+      position: relative;
+    }
+
+    section.workplace:last-child {
+      padding-bottom: 0.5rem;
+    }
+
+    section.workplace:not(.skip):before {
+      width: 13px;
+      height: 13px;
+      border: 2px solid var(--primary);
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      background-color: #FFF;
+      left: -7px;
+    }
+
+    section.workplace p.company {
+      color: var(--primary);
+      font-family: var(--mono);
+      line-height: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    section.workplace p.date {
+      color: rgba(0, 0, 0, .54);
+      font-family: var(--mono);
+      font-size: 80%;
+      line-height: 1rem;
+      margin-bottom: 0.5rem
+    }
+
+    section.workplace ul {
+      padding-left: 1.25rem;
+      color: rgba(0, 0, 0, .8);
+    }
+
+    section.workplace a {
+      color: var(--primary);
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      color: var(--primary);
+    }
+    section.secondary h2 {
+      color:rgba(255, 255, 255, .95);
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header id="summary">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="me.jpeg" alt="avatar" class="avatar d-none d-md-block">
+      </div>
+      <div class="col-md-8">
+        <h1>Caio Niehues</h1>
+        <p>Backend software engineer</p>
+        <ul>
+          <li>
+            <strong>Idade:</strong>
+            25
+          </li>
+          <li>
+            <strong>Localização atual:</strong>
+            Cascavel, Paraná, Brasil
+          </li>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:cniehues1@gmail.com">cniehues1@gmail.com</a>
+          </li>
+        </ul>
+        <h4>Links</h4>
+        <ul>
+          <li>
+            GitHub:
+            <a href="https://github.com/caioniehues" target="_blank" rel="nofollow">
+              @caioniehues
+            </a>
+          </li>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/caio-cesar-niehues-6336b01b8/" target="_blank" rel="nofollow">
+              Caio Cesar Niehues
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</div>
+<main id="main">
+  <div class="container">
+    <article class="work-experience">
+      <h2>Experiência Profissional</h2>
+
+      <section class="workplace">
+        <p class="company">Software Engineer @ ASAP Log</p>
+        <p class="date">Jan. 2022 - Jan. 2023</p>
+        <ul>
+          <li>
+            Trabalhei na manutenção do sistema de gerenciamento de entregas do maior grupo de varejo da América Latina,
+            construindo novas features e resolvendo bugs.
+          </li>
+          <li>
+            Tive a iniciativa de propor um padrão de testes unitários, utilizando BDD e o framework Spock.
+          </li>
+        </ul>
+      </section>
+
+      <section class="workplace">
+        <p class="company">Desenvolvedor Java @ Smart BR</p>
+        <p class="date">Set. 2021 - Jan. 2022</p>
+        <ul>
+          <li>
+            Trabalhei na documentação e organização de fluxos e análise de requisitos dos
+            produtos de software da empresa.
+          </li>
+          <li>
+            Mantinha as APIs REST, implementava novas features e resolvia bugs dos sistemas da
+            empresa.
+          </li>
+        </ul>
+      </section>
+
+      <section class="workplace">
+        <p class="company">Desenvolvedor Java Júnior @ Avati Sistemas</p>
+        <p class="date">Mai. 2021 - Set. 2021</p>
+        <ul>
+          <li>
+            Realizava implementação de features novas, além de manutenção e correção de bugs,
+            no sistema ERP da empresa.
+          </li>
+        </ul>
+      </section>
+
+      <section class="workplace">
+        <p class="company">Desenvolvedor Trainee @ Avati Sistemas</p>
+        <p class="date">Out. 2020 - Mai. 2021</p>
+        <ul>
+          <li>
+            Aprendi noções e fundamentos de Java e SQL realizando manutenção e correção de bugs
+            no sistema carro-chefe da empresa, um ERP.
+          </li>
+        </ul>
+      </section>
+    </article>
+    <article class="education">
+      <h2>Formação Acadêmica</h2>
+
+      <section class="workplace skip">
+        <p class="company">Bacharelado em Engenharia de Software @ Centro Universitário Fundação Assis Gurgacz</p>
+        <p class="date">2020 - 2023</p>
+        <ul>
+          <li>
+            Como projeto acadêmico,
+            <a href="https://www.fag.edu.br/noticia/noticia/19620" target="_blank" rel="nofollow">implementamos um CRM</a> para a faculdade manter contato com alunos
+            em potencial.
+          </li>
+          <li>
+            Também como projeto acadêmico, estamos implementando um
+            <a href="https://www.fag.edu.br/noticia/noticia/19996" target="_blank" rel="nofollow">
+              sistema para auxiliar na
+            gestão do Zoolõgico Municipal de Cascavel</a>, a pedido da Secretaria Municipal de
+            Meio Ambiente. O objetivo é informatizar todos os processos de cuidados dos animais,
+            como relatórios clínicos, alimentação e atividades realizadas.
+          </li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</main>
+<section class="secondary">
+  <div class="container">
+    <article class="skills">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Fluente em inglês e português.
+        <li>Experiência profissional em Java e Groovy.
+        <li>Experiência com os frameworks Spring Boot, Java EE e Grails.
+        <li>Experiência em bancos de dados SQL (PostgreSQL, Oracle) e NoSQL (MongoDB).
+        <li>Experiência usando Git para controle de versão.
+        <li>Experiência em Docker.
+      </ul>
+    </article>
+  </div>
+</section>
+</body>
+</html>
